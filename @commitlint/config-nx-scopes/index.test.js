@@ -1,5 +1,12 @@
+import {test, expect} from 'vitest';
+import path from 'path';
+import {fileURLToPath} from 'url';
+
 import {npm} from '@commitlint/test';
-import config from '.';
+
+import config from './index.js';
+
+const __dirname = path.resolve(fileURLToPath(import.meta.url), '..');
 
 test('exports rules key', () => {
 	expect(config).toHaveProperty('rules');
@@ -57,4 +64,28 @@ test('returns expected value for basic nx repository', async () => {
 
 	const [, , value] = await fn({cwd});
 	expect(value).toEqual(['a', 'b']);
+});
+
+test('expect correct result from Nx 14', async () => {
+	const {'scope-enum': fn} = config.rules;
+	const cwd = await npm.bootstrap('fixtures/nx14', __dirname);
+
+	const [, , value] = await fn({cwd});
+	expect(value).toEqual(['c', 'd']);
+});
+
+test('expect correct result from Nx 15', async () => {
+	const {'scope-enum': fn} = config.rules;
+	const cwd = await npm.bootstrap('fixtures/nx15', __dirname);
+
+	const [, , value] = await fn({cwd});
+	expect(value).toEqual(['e', 'f']);
+});
+
+test('expect correct result from Nx 17', async () => {
+	const {'scope-enum': fn} = config.rules;
+	const cwd = await npm.bootstrap('fixtures/nx17', __dirname);
+
+	const [, , value] = await fn({cwd});
+	expect(value).toEqual(['g', 'h']);
 });

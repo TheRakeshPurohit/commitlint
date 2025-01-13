@@ -1,6 +1,6 @@
-> Lint your conventional commits
-
 # @commitlint/config-conventional
+
+Lint your conventional commits
 
 Shareable `commitlint` config enforcing [conventional commits](https://conventionalcommits.org/).
 Use with [@commitlint/cli](https://npm.im/@commitlint/cli) and [@commitlint/prompt-cli](https://npm.im/@commitlint/prompt-cli).
@@ -9,7 +9,7 @@ Use with [@commitlint/cli](https://npm.im/@commitlint/cli) and [@commitlint/prom
 
 ```sh
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
-echo "module.exports = {extends: ['@commitlint/config-conventional']};" > commitlint.config.js
+echo "export default {extends: ['@commitlint/config-conventional']};" > commitlint.config.js
 ```
 
 ## Rules
@@ -18,7 +18,7 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']};" > commit
 
 The following rules are considered problems for `@commitlint/config-conventional` and will yield a non-zero exit code when not met.
 
-Consult [docs/rules](https://conventional-changelog.github.io/commitlint/#/reference-rules) for a list of available rules.
+Consult [Rules reference](https://commitlint.js.org/reference/rules) for a list of available rules.
 
 #### type-enum
 
@@ -136,7 +136,7 @@ echo "fix: some message" # passes
 
 - **condition**: `footer` should have a leading blank line
 - **rule**: `always`
-- level: `warning`
+- **level**: `warning`
 
 ```sh
 echo "fix: some message
@@ -151,7 +151,7 @@ BREAKING CHANGE: It will be significant" # passes
 
 - **condition**: `footer` each line has `value` or less characters
 - **rule**: `always`
-- level: `error`
+- **level**: `error`
 - **value**
 
 ```
@@ -174,7 +174,7 @@ but still no line is too long" # passes
 
 - **condition**: `body` should have a leading blank line
 - **rule**: `always`
-- level: `warning`
+- **level**: `warning`
 
 ```sh
 echo "fix: some message
@@ -189,7 +189,7 @@ body" # passes
 
 - **condition**: `body` each line has `value` or less characters
 - **rule**: `always`
-- level: `error`
+- **level**: `error`
 - **value**
 
 ```

@@ -1,6 +1,7 @@
 {
   "name": "@commitlint/to-lines",
-  "version": "17.4.0",
+  "type": "module",
+  "version": "19.5.0",
   "description": "Lint your commit messages",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,7 +13,7 @@
     "pkg": "pkg-check"
   },
   "engines": {
-    "node": ">=v14"
+    "node": ">=v18"
   },
   "repository": {
     "type": "git",
@@ -35,7 +36,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/utils": "^17.4.0"
+    "@commitlint/utils": "^19.5.0"
   },
   "gitHead": "d829bf6260304ca8d6811f329fcdd1b6c50e9749"
 }

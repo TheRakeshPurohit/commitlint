@@ -1,6 +1,7 @@
 {
-  "name": "@commitlint/test-environment",
-  "version": "17.1.0",
+  "name": "vitest-environment-commitlint",
+  "type": "module",
+  "version": "19.0.0",
   "description": "test environment for @commitlint",
   "private": true,
   "main": "lib/test-environment.js",
@@ -9,7 +10,7 @@
     "lib/"
   ],
   "engines": {
-    "node": ">=v14"
+    "node": ">=v18"
   },
   "repository": {
     "type": "git",
@@ -28,9 +29,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@types/tmp": "^0.2.0",
-    "jest-environment-node": "^29.0.1",
-    "tmp": "0.2.1"
+    "@types/tmp": "^0.2.5",
+    "jest-environment-node": "^29.6.2",
+    "tmp": "^0.2.1"
   },
   "gitHead": "71f0194f33943954a8dac1c458be47e5049717cd"
 }

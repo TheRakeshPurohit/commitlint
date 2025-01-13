@@ -3,6 +3,248 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [19.6.0](https://github.com/conventional-changelog/commitlint/compare/v19.5.0...v19.6.0) (2024-11-19)
+
+
+### Features
+
+* support using delimiter in `scope-enum` ([#4161](https://github.com/conventional-changelog/commitlint/issues/4161)) ([f55521d](https://github.com/conventional-changelog/commitlint/commit/f55521dbb8ce0530ecb9557122689bba740fb2a5))
+
+
+
+
+
+# [19.5.0](https://github.com/conventional-changelog/commitlint/compare/v19.4.1...v19.5.0) (2024-09-11)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+## [19.4.1](https://github.com/conventional-changelog/commitlint/compare/v19.4.0...v19.4.1) (2024-08-28)
+
+
+### Bug Fixes
+
+* **rules:** handle blank commit message in signed-off-by check ([#4124](https://github.com/conventional-changelog/commitlint/issues/4124)) ([7ab4bab](https://github.com/conventional-changelog/commitlint/commit/7ab4bab31f4b19ddedd850e435398037437007b6))
+
+
+
+
+
+## [19.0.3](https://github.com/conventional-changelog/commitlint/compare/v19.0.2...v19.0.3) (2024-02-28)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+# [19.0.0](https://github.com/conventional-changelog/commitlint/compare/v18.6.2...v19.0.0) (2024-02-27)
+
+
+* feat!: migrate to pure ESM (#3850) ([3423735](https://github.com/conventional-changelog/commitlint/commit/342373559bdf7c783c4ef37ff05dc38a5f681159)), closes [#3850](https://github.com/conventional-changelog/commitlint/issues/3850)
+
+
+### Reverts
+
+* Revert "chore!: minimum node version v20" ([2816783](https://github.com/conventional-changelog/commitlint/commit/2816783d00e7eb967de3ac9347c2fc43dc8b94fa))
+
+
+### BREAKING CHANGES
+
+* migrate to pure ESM
+
+* feat: migrate to pure ESM
+
+* chore: update snapshot
+
+* fix: load `parserPreset` with another `await`
+
+* test: migrate to vitest
+
+* test: remove no replacement `--runInBand` test-ci script
+
+* chore: fix code reviews
+
+* refactor(load): rewrite resolve logic
+
+* fix(config-nx-scopes): fix syntax error
+
+* feat(resolve-extends): add resolveFrom and loadParserPreset
+
+* feat(load): use resolveFrom and loadParserPreset from resolve-extends
+
+* test: include only @commitlint/* packages src in coverage
+
+* test: explicit import vitest utilities
+
+* test: remove @jest/globals from dependencies
+
+* fix(resolve-extends): `resolveFrom` output should be platform aware
+
+* test: restore NO_COLOR to test script
+
+* chore: fix linting issues
+
+* fix: should use fileURLToPath instead of pathname for Windows compatibility
+
+* Apply suggestions from code review
+
+* fix: should reuse `cli` instead call `yargs()`
+
+* feat(cli): set terminalWidth as wrap to avoid work break on help
+
+* Update .eslintrc.cjs
+
+* feat: migrate @commitlint/config-conventional to pure ESM
+
+
+
+
+
+## [18.6.1](https://github.com/conventional-changelog/commitlint/compare/v18.6.0...v18.6.1) (2024-02-13)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+# [18.6.0](https://github.com/conventional-changelog/commitlint/compare/v18.5.1...v18.6.0) (2024-01-25)
+
+
+### Features
+
+* **rules:** add header-trim rule ([#3199](https://github.com/conventional-changelog/commitlint/issues/3199)) ([#3871](https://github.com/conventional-changelog/commitlint/issues/3871)) ([331579a](https://github.com/conventional-changelog/commitlint/commit/331579a8796af901b5e5103c44fedf1cb3a2f661))
+
+
+
+
+
+## [18.4.4](https://github.com/conventional-changelog/commitlint/compare/v18.4.3...v18.4.4) (2024-01-04)
+
+
+### Bug Fixes
+
+* subject-full-stop false positive when using ellipsis ([#3839](https://github.com/conventional-changelog/commitlint/issues/3839)) ([b4246d6](https://github.com/conventional-changelog/commitlint/commit/b4246d6428399177d43296dc8bec6714e664d037))
+
+
+
+
+
+## [18.4.3](https://github.com/conventional-changelog/commitlint/compare/v18.4.2...v18.4.3) (2023-11-21)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+# [18.4.0](https://github.com/conventional-changelog/commitlint/compare/v18.3.0...v18.4.0) (2023-11-10)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+# [18.1.0](https://github.com/conventional-changelog/commitlint/compare/v18.0.0...v18.1.0) (2023-10-25)
+
+
+### Features
+
+* [scope-enum] [scope-case] allow space after comma as scope delimiter ([#3577](https://github.com/conventional-changelog/commitlint/issues/3577)) ([13c4bfc](https://github.com/conventional-changelog/commitlint/commit/13c4bfc637dd6c66477fa1c8da821ed46af28c44)), closes [#3576](https://github.com/conventional-changelog/commitlint/issues/3576)
+
+
+
+
+
+# [18.0.0](https://github.com/conventional-changelog/commitlint/compare/v17.8.1...v18.0.0) (2023-10-20)
+
+
+* chore!: minimum node version v18 (#3644) ([5b4aeaf](https://github.com/conventional-changelog/commitlint/commit/5b4aeaf4f01c2726a7bc8631a23bb34c849baad2)), closes [#3644](https://github.com/conventional-changelog/commitlint/issues/3644)
+
+
+### BREAKING CHANGES
+
+* drop node v14 and v16 support
+
+* chore: remove unused types
+
+* docs: prepare node update and new release
+
+* chore!: minimum TS version v5
+* drop TS v4 support
+
+* ci: remove node v14/16 checks
+
+* chore: adjust node types to minimal supported version
+
+* chore!: further major versions of other deps
+* upgrade conventional-changelog-conventionalcommits, conventional-commits-parser, conventional-changelog-atom, 
+
+* docs: simplify releases and remove roadmap
+
+
+
+
+
+## [17.8.1](https://github.com/conventional-changelog/commitlint/compare/v17.8.0...v17.8.1) (2023-10-20)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+# [17.7.0](https://github.com/conventional-changelog/commitlint/compare/v17.6.7...v17.7.0) (2023-08-09)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+## [17.6.7](https://github.com/conventional-changelog/commitlint/compare/v17.6.6...v17.6.7) (2023-07-19)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+## [17.6.5](https://github.com/conventional-changelog/commitlint/compare/v17.6.4...v17.6.5) (2023-05-30)
+
+**Note:** Version bump only for package @commitlint/rules
+
+
+
+
+
+## [17.6.1](https://github.com/conventional-changelog/commitlint/compare/v17.6.0...v17.6.1) (2023-04-14)
+
+
+### Bug Fixes
+
+* **rules:** avoid processing strings with case-less Letter category symbols in `subject-case` ([#3586](https://github.com/conventional-changelog/commitlint/issues/3586)) ([70a4450](https://github.com/conventional-changelog/commitlint/commit/70a44501ac8459f0c1d2b200608b024585964637)), closes [#3585](https://github.com/conventional-changelog/commitlint/issues/3585)
+
+
+
+
+
+# [17.6.0](https://github.com/conventional-changelog/commitlint/compare/v17.5.1...v17.6.0) (2023-04-13)
+
+
+### Features
+
+* **rules:** expand Latin-only characters limitation for `subject-case` with Unicode support ([#3575](https://github.com/conventional-changelog/commitlint/issues/3575)) ([5f83423](https://github.com/conventional-changelog/commitlint/commit/5f8342355a856e5be7b8a7b851e1519d62678465))
+
+
+
+
+
 ## [17.4.4](https://github.com/conventional-changelog/commitlint/compare/v17.4.3...v17.4.4) (2023-02-17)
 
 **Note:** Version bump only for package @commitlint/rules

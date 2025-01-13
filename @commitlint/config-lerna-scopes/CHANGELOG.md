@@ -3,6 +3,208 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [19.7.0](https://github.com/conventional-changelog/commitlint/compare/v19.6.1...v19.7.0) (2025-01-04)
+
+
+### Features
+
+* support lerna 7 and 8 ([#4221](https://github.com/conventional-changelog/commitlint/issues/4221)) ([3b8da63](https://github.com/conventional-changelog/commitlint/commit/3b8da63f50f868555a3f026a76e96cd8d20638de))
+
+
+
+
+
+# [19.5.0](https://github.com/conventional-changelog/commitlint/compare/v19.4.1...v19.5.0) (2024-09-11)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+# [19.0.0](https://github.com/conventional-changelog/commitlint/compare/v18.6.2...v19.0.0) (2024-02-27)
+
+
+* feat!: migrate to pure ESM (#3850) ([3423735](https://github.com/conventional-changelog/commitlint/commit/342373559bdf7c783c4ef37ff05dc38a5f681159)), closes [#3850](https://github.com/conventional-changelog/commitlint/issues/3850)
+
+
+### Reverts
+
+* Revert "chore!: minimum node version v20" ([2816783](https://github.com/conventional-changelog/commitlint/commit/2816783d00e7eb967de3ac9347c2fc43dc8b94fa))
+
+
+### BREAKING CHANGES
+
+* migrate to pure ESM
+
+* feat: migrate to pure ESM
+
+* chore: update snapshot
+
+* fix: load `parserPreset` with another `await`
+
+* test: migrate to vitest
+
+* test: remove no replacement `--runInBand` test-ci script
+
+* chore: fix code reviews
+
+* refactor(load): rewrite resolve logic
+
+* fix(config-nx-scopes): fix syntax error
+
+* feat(resolve-extends): add resolveFrom and loadParserPreset
+
+* feat(load): use resolveFrom and loadParserPreset from resolve-extends
+
+* test: include only @commitlint/* packages src in coverage
+
+* test: explicit import vitest utilities
+
+* test: remove @jest/globals from dependencies
+
+* fix(resolve-extends): `resolveFrom` output should be platform aware
+
+* test: restore NO_COLOR to test script
+
+* chore: fix linting issues
+
+* fix: should use fileURLToPath instead of pathname for Windows compatibility
+
+* Apply suggestions from code review
+
+* fix: should reuse `cli` instead call `yargs()`
+
+* feat(cli): set terminalWidth as wrap to avoid work break on help
+
+* Update .eslintrc.cjs
+
+* feat: migrate @commitlint/config-conventional to pure ESM
+
+
+
+
+
+## [18.6.1](https://github.com/conventional-changelog/commitlint/compare/v18.6.0...v18.6.1) (2024-02-13)
+
+
+### Bug Fixes
+
+* update dependency semver to v7.6.0 ([#3900](https://github.com/conventional-changelog/commitlint/issues/3900)) ([df33003](https://github.com/conventional-changelog/commitlint/commit/df33003dce77bc5ff48678cddf9401dffedaeb57))
+
+
+
+
+
+## [18.4.4](https://github.com/conventional-changelog/commitlint/compare/v18.4.3...v18.4.4) (2024-01-04)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+## [18.4.3](https://github.com/conventional-changelog/commitlint/compare/v18.4.2...v18.4.3) (2023-11-21)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+# [18.4.0](https://github.com/conventional-changelog/commitlint/compare/v18.3.0...v18.4.0) (2023-11-10)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+# [18.1.0](https://github.com/conventional-changelog/commitlint/compare/v18.0.0...v18.1.0) (2023-10-25)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+# [18.0.0](https://github.com/conventional-changelog/commitlint/compare/v17.8.1...v18.0.0) (2023-10-20)
+
+
+* chore!: minimum node version v18 (#3644) ([5b4aeaf](https://github.com/conventional-changelog/commitlint/commit/5b4aeaf4f01c2726a7bc8631a23bb34c849baad2)), closes [#3644](https://github.com/conventional-changelog/commitlint/issues/3644)
+
+
+### BREAKING CHANGES
+
+* drop node v14 and v16 support
+
+* chore: remove unused types
+
+* docs: prepare node update and new release
+
+* chore!: minimum TS version v5
+* drop TS v4 support
+
+* ci: remove node v14/16 checks
+
+* chore: adjust node types to minimal supported version
+
+* chore!: further major versions of other deps
+* upgrade conventional-changelog-conventionalcommits, conventional-commits-parser, conventional-changelog-atom, 
+
+* docs: simplify releases and remove roadmap
+
+
+
+
+
+## [17.8.1](https://github.com/conventional-changelog/commitlint/compare/v17.8.0...v17.8.1) (2023-10-20)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+# [17.7.0](https://github.com/conventional-changelog/commitlint/compare/v17.6.7...v17.7.0) (2023-08-09)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+## [17.6.6](https://github.com/conventional-changelog/commitlint/compare/v17.6.5...v17.6.6) (2023-06-24)
+
+**Note:** Version bump only for package @commitlint/config-lerna-scopes
+
+
+
+
+
+## [17.6.3](https://github.com/conventional-changelog/commitlint/compare/v17.6.2...v17.6.3) (2023-05-04)
+
+
+### Bug Fixes
+
+* **config-lerna-scopes:** add missing dependency ([#3607](https://github.com/conventional-changelog/commitlint/issues/3607)) ([2fff094](https://github.com/conventional-changelog/commitlint/commit/2fff0943899161b2159a4acddc9237c6ab60c7a5))
+* update dependency semver to v7.5.0 ([#3604](https://github.com/conventional-changelog/commitlint/issues/3604)) ([01e35e0](https://github.com/conventional-changelog/commitlint/commit/01e35e06cf9123a0c367e0d0ac79988ec4334e6a))
+
+
+
+
+
+## [17.6.2](https://github.com/conventional-changelog/commitlint/compare/v17.6.1...v17.6.2) (2023-05-03)
+
+
+### Bug Fixes
+
+* lerna package.json resolution ([#3600](https://github.com/conventional-changelog/commitlint/issues/3600)) ([6c5cd53](https://github.com/conventional-changelog/commitlint/commit/6c5cd535679ac9448a127a57e309276e699cebb9))
+
+
+
+
+
 ## [17.4.2](https://github.com/conventional-changelog/commitlint/compare/v17.4.1...v17.4.2) (2023-01-12)
 
 **Note:** Version bump only for package @commitlint/config-lerna-scopes
