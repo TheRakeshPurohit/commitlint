@@ -1,12 +1,14 @@
+import {test, expect} from 'vitest';
 import parse from '@commitlint/parse';
-import {subjectFullStop} from './subject-full-stop';
+import {subjectFullStop} from './subject-full-stop.js';
 
 const messages = {
 	empty: 'test:\n',
 	with: `test: subject.\n`,
 	without: `test: subject\n`,
 	standardScopeWith: `type(scope): subject.\n`,
-	nonStandardScopeWith: "type.scope: subject.\n"
+	nonStandardScopeWith: 'type.scope: subject.\n',
+	ellipsisMessage: 'test: subject ends with ellipsis...',
 };
 
 const parsed = {
@@ -15,6 +17,7 @@ const parsed = {
 	without: parse(messages.without),
 	standardScopeWith: parse(messages.standardScopeWith),
 	nonStandardScopeWith: parse(messages.nonStandardScopeWith),
+	ellipsisMessage: parse(messages.ellipsisMessage),
 };
 
 test('empty against "always" should succeed', async () => {
@@ -54,13 +57,27 @@ test('without against "never ." should succeed', async () => {
 });
 
 test('commit message title with standard scope and full-stop against "never ." should fail', async () => {
-	const [actual] = subjectFullStop(await parsed.standardScopeWith, 'never', '.');
+	const [actual] = subjectFullStop(
+		await parsed.standardScopeWith,
+		'never',
+		'.'
+	);
 	const expected = false;
 	expect(actual).toEqual(expected);
 });
 
 test('commit message title with non standard scope and full-stop against "never ." should fail', async () => {
-	const [actual] = subjectFullStop(await parsed.nonStandardScopeWith, 'never', '.');
+	const [actual] = subjectFullStop(
+		await parsed.nonStandardScopeWith,
+		'never',
+		'.'
+	);
 	const expected = false;
+	expect(actual).toEqual(expected);
+});
+
+test('ellipsis is not fullstop so commit title ending with it against "never ." should not fail', async () => {
+	const [actual] = subjectFullStop(await parsed.ellipsisMessage, 'never', '.');
+	const expected = true;
 	expect(actual).toEqual(expected);
 });

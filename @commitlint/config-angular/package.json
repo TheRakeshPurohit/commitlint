@@ -1,7 +1,9 @@
 {
   "name": "@commitlint/config-angular",
-  "version": "17.4.4",
+  "type": "module",
+  "version": "19.7.1",
   "description": "Shareable commitlint config enforcing the angular commit convention",
+  "main": "index.js",
   "files": [
     "index.js"
   ],
@@ -27,14 +29,14 @@
   },
   "homepage": "https://commitlint.js.org/",
   "engines": {
-    "node": ">=v14"
+    "node": ">=v18"
   },
   "devDependencies": {
-    "@commitlint/lint": "^17.4.4",
-    "@commitlint/utils": "^17.4.0"
+    "@commitlint/lint": "^19.7.1",
+    "@commitlint/utils": "^19.5.0"
   },
   "dependencies": {
-    "@commitlint/config-angular-type-enum": "^17.4.0"
+    "@commitlint/config-angular-type-enum": "^19.5.0"
   },
   "gitHead": "d829bf6260304ca8d6811f329fcdd1b6c50e9749"
 }

@@ -1,7 +1,9 @@
 {
   "name": "@commitlint/config-patternplate",
-  "version": "17.4.4",
+  "type": "module",
+  "version": "19.7.1",
   "description": "Lint your commits, patternplate-style",
+  "main": "index.js",
   "files": [
     "index.js"
   ],
@@ -27,16 +29,16 @@
   },
   "homepage": "https://commitlint.js.org/",
   "engines": {
-    "node": ">=v14"
+    "node": ">=v18"
   },
   "dependencies": {
-    "@commitlint/config-angular": "^17.4.4",
-    "glob": "^8.0.3",
+    "@commitlint/config-angular": "^19.7.1",
+    "glob": "^10.3.10",
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "@commitlint/utils": "^17.4.0",
-    "@types/lodash.merge": "^4.6.7"
+    "@commitlint/utils": "^19.5.0",
+    "@types/lodash.merge": "^4.6.8"
   },
   "gitHead": "d829bf6260304ca8d6811f329fcdd1b6c50e9749"
 }

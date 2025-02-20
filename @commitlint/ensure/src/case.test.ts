@@ -1,4 +1,6 @@
-import ensure from './case';
+import {test, expect} from 'vitest';
+
+import ensure from './case.js';
 
 test('true for no params', () => {
 	const actual = ensure();
@@ -334,5 +336,5 @@ test('true for numeric on lowercase', () => {
 
 test('throw TypeError for invalid case name', () => {
 	const actualFn = () => ensure('anything', 'someweirdcase' as any);
-	expect(actualFn).toThrowError(TypeError);
+	expect(actualFn).toThrow(TypeError);
 });
